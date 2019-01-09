@@ -540,8 +540,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Multiplayer.Exps.PeerID,
 		C3.Plugins.Multiplayer.Cnds.OnPeerDisconnected,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
+		C3.Plugins.Sprite.Acts.SetAnimSpeed,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Behaviors.EightDir.Acts.SimulateControl,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Plugins.Multiplayer.Exps.PeerState,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.getbit,
@@ -690,6 +693,8 @@ const f0 = p._GetNode(0).GetBoundMethod();
 return () => f0(0, (1080 / 4));
 },
 () => "HOST_CONTROLS",
+() => 20,
+() => "run",
 p => {
 const f0 = p._GetNode(0).GetBoundMethod();
 const f1 = p._GetNode(1).GetBoundMethod();
